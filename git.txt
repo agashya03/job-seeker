@@ -1,0 +1,3 @@
+git status
+ls -a -> .git folder
+git init
