@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Jobs | CareerConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">CareerConnect<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="jobs.html">Find Jobs</a>
+      <a href="saved-jobs.html">Saved Jobs</a><a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn" href="saved-jobs.html">Saved Jobs ♡</a>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">YOUR NEXT CHAPTER</span>
+      <h1>Find your next job.</h1>
+      <p>Search opportunities that match your skills and ambitions.</p>
+      <form id="jobs-search" class="search-form">
+        <input id="search-keyword" placeholder="Job title, skill or company">
+        <input id="search-location" placeholder="City or Remote">
+        <button class="btn">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <main class="container section">
+    <div class="jobs-layout">
+      <aside class="filters">
+        <div class="filter-title">
+          <h3>Filters</h3>
+          <button id="clear-filters" class="text-link">Clear all</button>
+        </div>
+        <h4>Experience</h4>
+        <label><input type="checkbox" name="experience" value="Fresher"> Fresher</label>
+        <label><input type="checkbox" name="experience" value="Entry Level"> Entry level</label>
+        <label><input type="checkbox" name="experience" value="Experienced"> Experienced</label>
+        <h4>Work arrangement</h4>
+        <label><input type="checkbox" name="work" value="Remote"> Remote</label>
+        <label><input type="checkbox" name="work" value="Hybrid"> Hybrid</label>
+        <label><input type="checkbox" name="work" value="On-site"> On-site</label>
+        <h4>Job category</h4>
+        <label><input type="checkbox" name="category" value="Software"> Software</label>
+        <label><input type="checkbox" name="category" value="Cloud"> Cloud & DevOps</label>
+        <label><input type="checkbox" name="category" value="Data"> Data</label>
+        <label><input type="checkbox" name="category" value="Design"> Design</label>
+      </aside>
+
+      <section class="results">
+        <div class="results-toolbar">
+          <p id="results-count">Available jobs</p>
+          <select id="sort-jobs" aria-label="Sort jobs">
+            <option value="recent">Most recent</option>
+            <option value="salary">Highest salary</option>
+          </select>
+        </div>
+        <div id="all-jobs" class="job-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div><a class="logo logo-light" href="index.html">CareerConnect<span>.</span></a><p>Helping job seekers move forward.</p></div>
+      <div><h4>Explore</h4><a href="index.html">Home</a><a href="saved-jobs.html">Saved Jobs</a></div>
+      <div><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+    <p class="copyright">© <span data-year></span> CareerConnect. Demo website.</p>
+  </footer>
+</body>
+</html>
