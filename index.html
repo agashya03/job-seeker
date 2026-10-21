@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareerConnect | Find Your Dream Job</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
+  <header class="navbar">
+    <a class="logo" href="index.html">CareerConnect<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Find Jobs</a>
+      <a href="saved-jobs.html">Saved Jobs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn" href="jobs.html">Explore Jobs</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR CAREER STARTS HERE</span>
+        <h1>Find a job that<br><span>fits your future.</span></h1>
+        <p>Discover exciting opportunities, explore companies, and take the next step in your career.</p>
+
+        <form class="search-form" action="jobs.html">
+          <input type="text" name="q" placeholder="Job title or skill">
+          <input type="text" name="location" placeholder="City or Remote">
+          <button class="btn" type="submit">Search Jobs</button>
+        </form>
+
+        <p class="hero-note">✓ Opportunities for freshers and experienced professionals</p>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="visual-icon">✦</div>
+          <span class="status">New opportunity</span>
+          <h2>Cloud Engineer</h2>
+          <p>Build, deploy and grow your skills.</p>
+          <div class="tags"><span>AWS</span><span>Linux</span><span>DevOps</span></div>
+          <hr>
+          <strong>Explore your next move →</strong>
+        </div>
+        <div class="floating-card">✓ Your future starts today!</div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE OPPORTUNITIES</span>
+          <h2>Popular job categories</h2>
+          <p>Discover roles that match your interests.</p>
+        </div>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card" href="jobs.html?category=Software">
+          <span class="category-icon purple">⌘</span>
+          <h3>Software Development</h3>
+          <p>Frontend, backend and full stack</p>
+        </a>
+        <a class="category-card" href="jobs.html?category=Cloud">
+          <span class="category-icon blue">☁</span>
+          <h3>Cloud & DevOps</h3>
+          <p>AWS, automation and infrastructure</p>
+        </a>
+        <a class="category-card" href="jobs.html?category=Data">
+          <span class="category-icon orange">▤</span>
+          <h3>Data & Analytics</h3>
+          <p>Python, SQL and business insights</p>
+        </a>
+        <a class="category-card" href="jobs.html?category=Design">
+          <span class="category-icon pink">✳</span>
+          <h3>Design & Product</h3>
+          <p>UI/UX and product design</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">HANDPICKED FOR YOU</span>
+            <h2>Featured jobs</h2>
+            <p>Explore some example opportunities.</p>
+          </div>
+          <a class="text-link" href="jobs.html">View all jobs →</a>
+        </div>
+        <div id="featured-jobs" class="job-grid"></div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="cta">
+        <div>
+          <h2>Your next opportunity is waiting.</h2>
+          <p>Search jobs, save your favourites, and prepare for your next step.</p>
+        </div>
+        <a href="jobs.html" class="btn btn-white">Find Jobs →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <a class="logo logo-light" href="index.html">CareerConnect<span>.</span></a>
+        <p>Helping job seekers discover their next opportunity.</p>
+      </div>
+      <div><h4>Explore</h4><a href="jobs.html">Find Jobs</a><a href="saved-jobs.html">Saved Jobs</a></div>
+      <div><h4>Company</h4><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+    </div>
+    <p class="copyright">© <span data-year></span> CareerConnect. Demo website.</p>
+  </footer>
 </body>
 </html>
